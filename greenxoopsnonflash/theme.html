@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="XOOPS" />
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_themecss}>" />
+<{$xoops_module_header}> 
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+</script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+//-->
+</script>
+</head>
+<body onload="MM_preloadImages('<{$xoops_imageurl}>images/mainmenuh_icon.gif')">
+<table border="0" align="left" cellpadding="0" cellspacing="0" style="width: 783px; margin: 0px; padding: 0px;">
+<tr>
+<td align="left" valign="top" bgcolor="#FFFFFF">
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" valign="top" id="leftcolumn">
+<!-- Start left blocks loop -->
+<{foreach item=block from=$xoops_lblocks}><{include file="greenxoopsnonflash/theme_blockleft.html"}><{/foreach}>
+<!-- End left blocks loop -->
+</td>
+<td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td align="left" valign="top" bgcolor="#76A44A"><img src="<{$xoops_imageurl}>images/greenxoops.jpg" alt="" /></td>
+</table></td>
+<td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+  <td align="left" valign="top" id="search"><{include file="greenxoopsnonflash/search.html"}></td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+<tr> 
+<td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td align="left" valign="top"> <table width="100%" border="0" cellspacing="1" cellpadding="0">
+<tr><td align="center" valign="top"><{$xoops_banner}></td></tr>
+<tr>
+<td id="centerCcolumn" colspan="3" align="left" valign="top">
+<!-- Start center-center blocks loop -->
+<{foreach item=block from=$xoops_ccblocks}>
+<{include file="greenxoopsnonflash/theme_blockcenter_c.html"}>
+<{/foreach}> 
+<!-- End center-center blocks loop -->
+</td>
+</tr>
+<tr>
+<td align="left" valign="top">
+<!-- Display center blocks if any -->
+<{if $xoops_showcblock == 1}> <table cellpadding="0" cellspacing="0">
+<tr>
+<td align="left" valign="top" id="centerLcolumn"> 
+<!-- Start center-left blocks loop -->
+<{foreach item=block from=$xoops_clblocks}> <{include file="greenxoopsnonflash/theme_blockcenter_l.html"}> <{/foreach}> 
+<!-- End center-left blocks loop -->
+</td>
+<td align="left" valign="top" width="2"><img src="<{$xoops_imageurl}>images/spacer.gif" alt="" width="2" /></td>
+<td align="left" valign="top" id="centerRcolumn"> 
+<!-- Start center-right blocks loop -->
+<{foreach item=block from=$xoops_crblocks}> <{include file="greenxoopsnonflash/theme_blockcenter_r.html"}> <{/foreach}> 
+<!-- End center-right blocks loop -->
+</td>
+</tr>
+</table>
+<{/if}> 
+<!-- End display center blocks -->
+<div id="content"><{$xoops_contents}></div></td>
+</tr>
+</table></td>
+<td align="left" valign="top"> <table border="0" align="center" cellpadding="0" cellspacing="0">
+<tr> 
+<td align="center" valign="top" id="rightcolumn">
+<{if $xoops_showrblock == 1}> 
+<!-- Start right blocks loop -->
+<{foreach item=block from=$xoops_rblocks}>						
+<{include file="greenxoopsnonflash/theme_blockright.html"}>		
+<{/foreach}> 
+<!-- End right blocks loop -->
+<br />
+<br /></td>
+<{/if}></tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+<td class="sideshadow" rowspan="2" width="3"><img src="<{$xoops_imageurl}>images/spacer.gif" alt="" width="3" /></td></tr>
+<tr><td>
+<table id="pagefoot" align="left">
+<tr>
+<td class="pagefooter" align="left" width="300"><img src="<{$xoops_imageurl}>images/anblik_xoops.gif" alt="anblik web design company" border="0" usemap="#Map" /></td>
+<td bgcolor="#FFFFFF" align="left" width="1"><img src="<{$xoops_imageurl}>images/spacer.gif" alt="" width="1" /></td>
+<td class="pagefooter" align="center" valign="middle"><{$xoops_footer}></td>
+<td align="right" valign="middle">
+<table style="width: 150px;" border="0" cellspacing="1" cellpadding="0">
+<tr> 
+<td align="center" valign="middle" class="wcss"><a href="http://jigsaw.w3.org/css-validator/validator?uri=<{$xoops_url}>" target="_blank"><img src="<{$xoops_imageurl}>images/buttons_CSSValidation.gif" alt="Valid CSS!" width="74" height="11" vspace="0" border="0" align="middle"/></a></td>
+<td align="center" valign="middle" class="wcss"><a href="http://validator.w3.org/check?uri=<{$xoops_url}>" target="_blank"><img src="<{$xoops_imageurl}>images/buttons_w3cValidation.gif" alt="Valid XHTML 1.0" width="74" height="11" hspace="3" vspace="0" align="middle"/></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<map name="Map" id="Map"><area shape="rect" coords="205,2,294,13" href="http://www.anblik.com/" target="_blank" alt="web design company" /><area shape="rect" coords="3,2,178,12" href="http://www.xoops.org/" target="_blank" alt="xoops" /></map>
+</body>
+</html>
